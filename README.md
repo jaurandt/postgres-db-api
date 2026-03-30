@@ -55,7 +55,7 @@ psql -U postgres -d postgresdb -f src/main/resources/schema.sql
 The app reads connection details from environment variables. Set them before running:
 
 ```bash
-# Bash / Git Bash
+# Bash
 export DB_URL=jdbc:postgresql://localhost:5432/postgresdb
 export DB_USER=postgres
 export DB_PASSWORD=your_password
