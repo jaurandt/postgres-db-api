@@ -104,27 +104,33 @@ The server starts on **http://localhost:4568**.
 
 **List all records**
 ```bash
+# Bash
 curl http://localhost:4568/records
 ```
 ```powershell
+# PowerShell
 Invoke-RestMethod http://localhost:4568/records
 ```
 
 **Get a single record**
 ```bash
+# Bash
 curl http://localhost:4568/records/1
 ```
 ```powershell
+# PowerShell
 Invoke-RestMethod http://localhost:4568/records/1
 ```
 
 **Create a record**
 ```bash
+# Bash
 curl -X POST http://localhost:4568/records \
   -H "Content-Type: application/json" \
   -d '{"name": "my-record", "value": "hello world"}'
 ```
 ```powershell
+# PowerShell
 Invoke-RestMethod -Method POST -Uri http://localhost:4568/records `
   -ContentType "application/json" `
   -Body '{"name": "my-record", "value": "hello world"}'
@@ -132,11 +138,13 @@ Invoke-RestMethod -Method POST -Uri http://localhost:4568/records `
 
 **Update a record**
 ```bash
+# Bash
 curl -X PUT http://localhost:4568/records/1 \
   -H "Content-Type: application/json" \
   -d '{"name": "updated-name", "value": "new value"}'
 ```
 ```powershell
+# PowerShell
 Invoke-RestMethod -Method PUT -Uri http://localhost:4568/records/1 `
   -ContentType "application/json" `
   -Body '{"name": "updated-name", "value": "new value"}'
@@ -144,9 +152,11 @@ Invoke-RestMethod -Method PUT -Uri http://localhost:4568/records/1 `
 
 **Delete a record**
 ```bash
+# Bash
 curl -X DELETE http://localhost:4568/records/1
 ```
 ```powershell
+# PowerShell
 Invoke-RestMethod -Method DELETE -Uri http://localhost:4568/records/1
 ```
 
