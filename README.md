@@ -1,6 +1,6 @@
 # postgres-db-api
 
-A simple REST API backed by a real PostgreSQL database, built with Java and Spark. Supports full CRUD operations on a `records` table.
+A simple REST API backed by a PostgreSQL database, built with Java and Spark. Supports full CRUD operations on a `records` table.
 
 ---
 
